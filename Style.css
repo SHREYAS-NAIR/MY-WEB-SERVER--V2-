@@ -1,0 +1,40 @@
+body{
+	background: linear-gradient(-45deg, #ee7752,beige, coral,#ee7752,beige,coral);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.flash{
+    color:black;
+    animation: animate 1s linear infinite
+    alternate;
+}
+@keyframes animate{
+    0%{
+        color:black;
+        text-shadow: none;
+    }
+    50%{
+        color: burlywood;
+        text-shadow: 0 0 10px brown,
+        0 0 20px brown;
+    }
+    100%{
+        color:whitesmoke;
+        text-shadow: 0 0 10px brown,
+        0 0 20px brown,
+        0 0 40px brown,
+        0 0 80px brown;
+    }
+}
